@@ -27,6 +27,7 @@ public class Main {
 
         // Initialize and start game
         Game game = new Game(2, board, symbols);
-        game.gameFunction();
+        GameController controller = new GameController(game);
+        controller.start();
     }
 }
